@@ -1,4 +1,5 @@
 import React from 'react'
+import { Input } from "@/components/ui/input"
 
 function AuthLogin() {
   return (
@@ -9,17 +10,20 @@ function AuthLogin() {
         <div className=' mt-8'>
           <div>
             <label for="" className=' text-lg font-medium'>Email</label>
-            <input type="email"
+            <Input type="email" placeholder="Email" />
+            {/* <input type="email"
               className=' w-full border-2 border-gray-100 rounded-xl p-4 mt-1 bg-transparent'
               placeholder='Enter your Email'
-             />
+             /> */}
           </div>
           <div>
             <label for="" className=' text-lg font-medium'>Password</label>
-            <input type="password"
+            {/* <input type="password"
               className=' w-full border-2 border-gray-100 rounded-xl p-4 mt-1 bg-transparent'
               placeholder='Enter your Password'
-             />
+             /> */}
+
+            <Input type="password" placeholder="password" />
           </div>
           <div className=' mt-8 flex justify-between items-center'>
             <div>
