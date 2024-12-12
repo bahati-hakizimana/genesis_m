@@ -1,7 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Input } from "@/components/ui/input"
 
 function AuthRegister() {
+
+
+  const [formData, setFormData] = useState('');
+
+
+  const handleSubmitt = async(e) =>{
+    e.prevent
+  }
   return (
     <div className=' bg-white px-10 py-20 rounded-3xl border-2 border-orange-300'>
       <h1 className=' text-5xl font-semibold'>Welcome !!</h1>
@@ -52,7 +60,7 @@ function AuthRegister() {
         </div>
 
         <div className=' mt-8 flex flex-col gap-y-4'>
-          <button type='submit' className=' active:scale-[.98] active:duration-75 transition-all bg-blue-400 text-white font-bold py-3 rounded-xl hover:scale-[1.01] hover:bg-blue-800 hover:text-white hover:animate-spin hover:animate-bounce  ease-in-out text-lg'>Sign up</button>
+          <button type='submit' className=' active:scale-[.98] active:duration-75 transition-all bg-blue-300 text-white font-bold py-3 rounded-xl hover:scale-[1.01] hover:bg-blue-800 hover:text-white hover:animate-spin hover:animate-bounce  ease-in-out text-lg'>Sign up</button>
         </div>
 
       </form>
