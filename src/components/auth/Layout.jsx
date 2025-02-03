@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom"
-import logo from '../../assets/logo/urwegoLogo.jpeg'
+import logo from '../../assets/logo/GenesisOfficialLogo.png'
 
 function AuthLayout() {
     return (
@@ -9,11 +9,11 @@ function AuthLayout() {
 
             <div className=" w-60 h-60 bg-gradient-to-tr from-violet-500 to bg-orange-400 rounded-full animate-bounce">
 
-                <img src={logo} alt="" className=" w-30 border-2 border-yellow-300 h-60 bg-gradient-to-tr from-violet-500 to bg-orange-400 rounded-full animate-bounce" />
+                <img src={logo} alt="" className=" w-30 border-2 border-yellow-300 h-60 bg-gradient-to-tr from-violet-500 to bg-orange-400 rounded-full animate-bounce animate-spin" />
                 
             </div>
 
-            <div className=" w-full h-1/2 bg-blue-300 backdrop-blur-lg absolute bottom-0" />
+            <div className=" w-full h-1/2 bg-cyan-400 backdrop-blur-lg absolute bottom-0" />
 
                 {/* <div className=" max-w-md space-y-6 text-center text-primary-foreground">
 

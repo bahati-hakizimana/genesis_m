@@ -1,6 +1,6 @@
 import { ChartLine, ChartNoAxesCombined, ClipboardPlus, LayoutDashboard, Settings, Users } from 'lucide-react'
 import React, { Fragment } from 'react'
-import logo from '../../assets/logo/urwegoLogo.jpeg'
+import logo from '../../assets/logo/logo1.png'
 import { useNavigate } from 'react-router-dom'
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from '../ui/sheet'
 // import { employeeSidebarMenuItems } from '@/config'

@@ -1,10 +1,10 @@
-import { ChartLine, ChartNoAxesCombined, LayoutDashboard, Settings, Users } from 'lucide-react'
+<BookOpen />
+import { ChartLine, ChartNoAxesCombined, LayoutDashboard, Settings, Users, BookCheck, BookOpen, BookOpenText, BadgeDollarSign  } from 'lucide-react'
 import React, { Fragment } from 'react'
-import logo from '../../assets/logo/urwegoLogo.jpeg'
+import logo from '../../assets/logo/GenesisOfficialLogo.png'
 import { useNavigate } from 'react-router-dom'
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from '../ui/sheet'
 // import { adminSidebarMenuItems } from '@/config'
-
 
  const adminSidebarMenuItems = [
   {
@@ -20,11 +20,30 @@ import { Sheet, SheetContent, SheetHeader, SheetTitle } from '../ui/sheet'
      icon: <Users />,
   },
   {
-     id: 'evaluation',
-     lable: 'Evaluation',
-     path: '/admin/evaluation',
-     icon: <ChartNoAxesCombined />,
+     id: 'books',
+     lable: 'Books',
+     path: '/admin/books',
+     icon: <BookOpen />,
   },
+  {
+     id: 'notes',
+     lable: 'LectureNotes',
+     path: '/admin/notes',
+     icon: <BookOpenText />,
+  },
+  {
+     id: 'exams',
+     lable: 'Exams',
+     path: '/admin/exams',
+     icon: <BookCheck />,
+  },
+  {
+     id: 'payments',
+     lable: 'Payments',
+     path: '/admin/payments',
+     icon: <BadgeDollarSign />,
+  },
+
   {
      id: 'setting',
      lable: 'Settings',
@@ -47,7 +66,7 @@ function MenuItems({ setOpen }){
         } className=' flex items-center gap-2 rounded-md px-3 py-2 text-muted-foreground hover:bg-blue-300 text-xl hover:text-white hover:cursor-pointer'>
 
           {menuItem.icon}
-          <span>{menuItem.lable}</span>
+          <span className=' hover:text-white'>{menuItem.lable}</span>
 
         </div>)
       }
