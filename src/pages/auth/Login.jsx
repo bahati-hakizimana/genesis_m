@@ -35,11 +35,11 @@ function AuthLogin() {
         localStorage.setItem("user", JSON.stringify(data.user));
         localStorage.setItem("userId", data.user.id); // Store the user's ID
 
-        // Redirect user based on role (modify this if needed)
-        if (data.user.email === "bahati@gmail.com") {
+        // Redirect based on is_admin field from the response
+        if (data.user.is_admin) {
           navigate("/admin"); // Admin goes to admin panel
         } else {
-          navigate("/dashboard"); // Regular users go to dashboard
+          navigate("/admin"); // Regular users go to dashboard
         }
       } else {
         toast.error(data.message || "Invalid credentials!");
