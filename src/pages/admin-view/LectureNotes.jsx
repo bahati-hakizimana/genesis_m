@@ -25,7 +25,7 @@ function LectureNotes() {
   }, []);
 
   const handleViewDetails = (noteId) => {
-    navigate(`/notes/${noteId}`);
+    navigate(`/admin/notes/${noteId}`);
   };
 
   return (

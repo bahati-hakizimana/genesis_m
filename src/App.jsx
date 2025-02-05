@@ -26,6 +26,7 @@ import AddNotes from "./pages/admin-view/AddNotes"
 import CreateExams from "./pages/admin-view/CreateExams"
 import ViewExamDetails from "./pages/admin-view/ViewExamDetails"
 import AddTeachersNotes from "./pages/admin-view/AddTeachersNotes"
+import ViewTeachersNote from "./pages/admin-view/ViewTeachersNote"
 
 
 function App() {
@@ -75,6 +76,7 @@ function App() {
 
           <Route path="books/:id" element={<ViewBooksDetails />} />
           <Route path="exams/:id" element={<ViewExamDetails />} />
+          <Route path="notes/:id" element={<ViewTeachersNote />} />
           <Route path="lessons" element={<Lessons />} />
         </Route>
         {/* Employee Routes */}
