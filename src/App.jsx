@@ -20,6 +20,12 @@ import Payments from "./pages/admin-view/Payments"
 import UsersList from "./pages/admin-view/UsersList"
 import CreateBooks from "./pages/admin-view/CreateBooks"
 import ViewBooksDetails from "./pages/admin-view/ViewBooksDetails"
+import Lessons from "./pages/admin-view/Lessons"
+import CreateLesson from "./pages/admin-view/CreateLesson"
+import AddNotes from "./pages/admin-view/AddNotes"
+import CreateExams from "./pages/admin-view/CreateExams"
+import ViewExamDetails from "./pages/admin-view/ViewExamDetails"
+import AddTeachersNotes from "./pages/admin-view/AddTeachersNotes"
 
 
 function App() {
@@ -62,7 +68,14 @@ function App() {
           <Route path="exams" element={<Exams />} />
           <Route path="payments" element={<Payments />} />
           <Route path="createbook" element={<CreateBooks />} />
+          <Route path="createlesson" element={<CreateLesson />} />
+          <Route path="addnotes" element={<AddNotes />} />
+          <Route path="createexam" element={<CreateExams />} />
+          <Route path="createnotes" element={<AddTeachersNotes />} />
+
           <Route path="books/:id" element={<ViewBooksDetails />} />
+          <Route path="exams/:id" element={<ViewExamDetails />} />
+          <Route path="lessons" element={<Lessons />} />
         </Route>
         {/* Employee Routes */}
         <Route path="/employee" element={

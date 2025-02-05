@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
 import { Button } from "@/components/ui/button";  // Assuming the Button component exists in your project
 import { Card, CardContent } from "@/components/ui/card";  // Assuming the Card components exists in your project
@@ -42,6 +42,9 @@ function Books() {
   return (
     <div className="container mx-auto p-6">
       <Card>
+        <div className=" flex justify-end">
+          <Link className=" px-4 py-2 rounded-lg bg-blue-500 text-white" to="/admin/createbook">AddBooks</Link>
+        </div>
         <CardContent>
           <h2 className="text-2xl font-semibold mb-4">Books</h2>
           <div className="overflow-x-auto">
