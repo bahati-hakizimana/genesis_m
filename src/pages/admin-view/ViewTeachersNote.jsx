@@ -12,7 +12,7 @@ function ViewTeachersNote() {
   useEffect(() => {
     const fetchNoteDetails = async () => {
       try {
-        const response = await axios.get(`http://127.0.0.1:8000/api/notes/${id}/`);
+        const response = await axios.get(`http://197.243.27.49/api/notes/${id}/`);
         setNote(response.data);
       } catch (error) {
         console.error("Error fetching note details:", error);

@@ -22,7 +22,7 @@ function CreateLesson() {
         }
 
         // Fetch courses
-        const coursesResponse = await axios.get("http://127.0.0.1:8000/api/courses/", {
+        const coursesResponse = await axios.get("http://197.243.27.49/api/courses/", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -31,7 +31,7 @@ function CreateLesson() {
         setCourses(coursesResponse.data);
 
         // Fetch classes
-        const classesResponse = await axios.get("http://127.0.0.1:8000/api/classes/", {
+        const classesResponse = await axios.get("http://197.243.27.49/api/classes/", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -62,7 +62,7 @@ function CreateLesson() {
       }
 
       const response = await axios.post(
-        "http://127.0.0.1:8000/api/lessons/",
+        "http://197.243.27.49/api/lessons/",
         { title, display, course, class_assigned: classAssigned },
         {
           headers: {

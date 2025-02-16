@@ -29,12 +29,12 @@ const adminSidebarMenuItems = [
     path: '/admin/payments',
     icon: <BadgeDollarSign />,
   },
-  {
-    id: 'user',
-    lable: 'UsersList',
-    path: 'userlist',
-    icon: <Users />,
-  },
+  // {
+  //   id: 'user',
+  //   lable: 'UsersList',
+  //   path: 'userlist',
+  //   icon: <Users />,
+  // },
   {
     id: 'notes',
     lable: 'LectureNotes',

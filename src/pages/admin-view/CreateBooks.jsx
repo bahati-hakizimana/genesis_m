@@ -23,7 +23,7 @@ function CreateBooks() {
   // Fetch lessons from the API
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:8000/api/lessons/")
+      .get("http://197.243.27.49/api/lessons/")
       .then((response) => {
         setLessons(response.data);
       })
@@ -58,7 +58,7 @@ function CreateBooks() {
     formData.append("created_by", userId); // Use the logged-in user's ID
 
     try {
-      const response = await axios.post("http://127.0.0.1:8000/api/books/", formData, {
+      const response = await axios.post("http://197.243.27.49/api/books/", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
           Authorization: `Bearer ${localStorage.getItem("accessToken")}`,

@@ -27,6 +27,8 @@ import CreateExams from "./pages/admin-view/CreateExams"
 import ViewExamDetails from "./pages/admin-view/ViewExamDetails"
 import AddTeachersNotes from "./pages/admin-view/AddTeachersNotes"
 import ViewTeachersNote from "./pages/admin-view/ViewTeachersNote"
+import ListCourses from "./pages/admin-view/ListCourses"
+import Levels from "./pages/admin-view/Levels"
 
 
 function App() {
@@ -70,6 +72,8 @@ function App() {
           <Route path="payments" element={<Payments />} />
           <Route path="createbook" element={<CreateBooks />} />
           <Route path="createlesson" element={<CreateLesson />} />
+          <Route path="createcourses" element={<ListCourses />} />
+          <Route path="createlevels" element={<Levels />} />
           <Route path="addnotes" element={<AddNotes />} />
           <Route path="createexam" element={<CreateExams />} />
           <Route path="createnotes" element={<AddTeachersNotes />} />

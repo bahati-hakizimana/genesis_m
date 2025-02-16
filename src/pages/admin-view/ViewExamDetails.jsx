@@ -17,7 +17,7 @@ function ViewExamDetails() {
           toast.error("Access token is missing. Please log in.");
           return;
         }
-        const response = await axios.get(`http://127.0.0.1:8000/api/exams/${id}/`, {
+        const response = await axios.get(`http://197.243.27.49/api/exams/${id}/`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         setExam(response.data);

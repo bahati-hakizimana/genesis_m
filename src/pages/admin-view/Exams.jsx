@@ -18,7 +18,7 @@ function Exams() {
           throw new Error("Access token is missing. Please log in.");
         }
 
-        const response = await axios.get("http://127.0.0.1:8000/api/exams/", {
+        const response = await axios.get("http://197.243.27.49/api/exams/", {
           headers: {
             Authorization: `Bearer ${token}`,
           },

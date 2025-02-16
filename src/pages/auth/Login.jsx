@@ -18,7 +18,7 @@ function AuthLogin() {
     };
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/api/login/", {
+      const response = await fetch("http://197.243.27.49/api/login/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -33,13 +33,13 @@ function AuthLogin() {
         localStorage.setItem("accessToken", data.access);
         localStorage.setItem("refreshToken", data.refresh);
         localStorage.setItem("user", JSON.stringify(data.user));
-        localStorage.setItem("userId", data.user.id); // Store the user's ID
+        localStorage.setItem("userId", data.user.id); 
 
-        // Redirect based on is_admin field from the response
+        
         if (data.user.is_admin) {
-          navigate("/admin"); // Admin goes to admin panel
+          navigate("/admin"); 
         } else {
-          navigate("/admin"); // Regular users go to dashboard
+          navigate("/admin"); 
         }
       } else {
         toast.error(data.message || "Invalid credentials!");
