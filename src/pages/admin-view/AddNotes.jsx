@@ -22,7 +22,7 @@ function AddNotes() {
     // Fetch lessons to populate the dropdown
     const fetchLessons = async () => {
       try {
-        const response = await axios.get("http://127.0.0.1:8000/api/lessons/");
+        const response = await axios.get("https://api.genesisonlineschool.rw/api/lessons/");
         setLessons(response.data);
       } catch (error) {
         console.error("Error fetching lessons:", error);
@@ -62,7 +62,7 @@ function AddNotes() {
       formDataToSubmit.append("price", formData.price);
 
       const response = await axios.post(
-        "http://127.0.0.1:8000/api/notes/",
+        "https://api.genesisonlineschool.rw/api/notes/",
         formDataToSubmit,
         {
           headers: {

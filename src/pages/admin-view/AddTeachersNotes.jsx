@@ -26,7 +26,7 @@ function AddTeachersNotes() {
         if (!token) {
           throw new Error("Access token is missing. Please log in.");
         }
-        const response = await axios.get("http://197.243.27.49/api/lessons/", {
+        const response = await axios.get("https://api.genesisonlineschool.rw/api/lessons/", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -75,7 +75,7 @@ function AddTeachersNotes() {
     formData.append("created_by", userId);
 
     try {
-      await axios.post("http://197.243.27.49/api/notes/", formData, {
+      await axios.post("https://api.genesisonlineschool.rw/api/notes/", formData, {
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "multipart/form-data",

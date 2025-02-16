@@ -20,7 +20,7 @@ function Levels() {
       }
 
       await axios.post(
-        "http://197.243.27.49/api/levels/",
+        "https://api.genesisonlineschool.rw/api/levels/",
         { name },
         {
           headers: {

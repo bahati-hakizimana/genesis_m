@@ -18,7 +18,7 @@ function AuthLogin() {
     };
 
     try {
-      const response = await fetch("http://197.243.27.49/api/login/", {
+      const response = await fetch("https://api.genesisonlineschool.rw/api/login/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

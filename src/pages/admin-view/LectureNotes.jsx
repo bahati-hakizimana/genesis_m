@@ -13,7 +13,7 @@ function LectureNotes() {
   useEffect(() => {
     const fetchNotes = async () => {
       try {
-        const response = await axios.get("http://197.243.27.49/api/notes");
+        const response = await axios.get("https://api.genesisonlineschool.rw/api/notes");
         setNotes(response.data);
       } catch (error) {
         console.error("Error fetching notes:", error);

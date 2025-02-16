@@ -17,7 +17,7 @@ function ViewBooksDetails() {
           throw new Error("Access token is missing. Please log in.");
         }
 
-        const response = await axios.get(`http://197.243.27.49/api/books/${id}`, {
+        const response = await axios.get(`https://api.genesisonlineschool.rw/api/books/${id}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },

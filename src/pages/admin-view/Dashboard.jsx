@@ -17,7 +17,7 @@ function Courses() {
   useEffect(() => {
     const fetchCourses = async () => {
       try {
-        const response = await axios.get("http://197.243.27.49/api/courses/");
+        const response = await axios.get("https://api.genesisonlineschool.rw/api/courses/");
         setCourses(response.data);
       } catch (error) {
         console.error("Error fetching courses:", error);
@@ -26,7 +26,7 @@ function Courses() {
 
     const fetchLevels = async () => {
       try {
-        const response = await axios.get("http://197.243.27.49/api/levels/");
+        const response = await axios.get("https://api.genesisonlineschool.rw/api/levels/");
         setLevels(response.data); // Store levels in state
       } catch (error) {
         console.error("Error fetching levels:", error);

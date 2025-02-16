@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { Button } from "@/components/ui/button"; // Assuming the Button component exists
-import { Card, CardContent } from "@/components/ui/Card"; // Assuming the Card component exists
+import { Button } from "@/components/ui/button"; 
+import { Card, CardContent } from "@/components/ui/Card";
 import { useNavigate } from "react-router-dom";
 
 function CreateBooks() {
@@ -23,7 +23,7 @@ function CreateBooks() {
   // Fetch lessons from the API
   useEffect(() => {
     axios
-      .get("http://197.243.27.49/api/lessons/")
+      .get("https://api.genesisonlineschool.rw/api/lessons/")
       .then((response) => {
         setLessons(response.data);
       })
@@ -58,7 +58,7 @@ function CreateBooks() {
     formData.append("created_by", userId); // Use the logged-in user's ID
 
     try {
-      const response = await axios.post("http://197.243.27.49/api/books/", formData, {
+      const response = await axios.post("https://api.genesisonlineschool.rw/api/books/", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
           Authorization: `Bearer ${localStorage.getItem("accessToken")}`,

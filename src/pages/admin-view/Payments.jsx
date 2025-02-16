@@ -10,7 +10,7 @@ function Payments() {
   const [payments, setPayments] = useState([]);
 
   useEffect(() => {
-    fetch("http://197.243.27.49/api/payment/all/")
+    fetch("https://api.genesisonlineschool.rw/api/payment/all/")
       .then((res) => res.json())
       .then((data) => setPayments(data.payments))
       .catch((err) => toast.error("Failed to fetch payments"));

@@ -20,7 +20,7 @@ function CreateCourse() {
           throw new Error("Access token is missing. Please log in.");
         }
 
-        const response = await axios.get("http://197.243.27.49/api/levels/", {
+        const response = await axios.get("https://api.genesisonlineschool.rw/api/levels/", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -51,7 +51,7 @@ function CreateCourse() {
       }
 
       await axios.post(
-        "http://197.243.27.49/api/courses/",
+        "https://api.genesisonlineschool.rw/api/courses/",
         { name, level },
         {
           headers: {
