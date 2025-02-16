@@ -3,7 +3,7 @@ import { toast } from "react-toastify";
 import axios from "axios";
 import "react-toastify/dist/ReactToastify.css";
 import { Button } from "@/components/ui/button";  // Assuming the Button component exists in your project
-import { Card, CardContent } from "@/components/ui/card";  // Assuming the Card components exists in your project
+import { Card, CardContent } from "@/components/ui/Card";  // Assuming the Card components exists in your project
 
 function CreateLesson() {
   const [title, setTitle] = useState("");

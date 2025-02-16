@@ -3,7 +3,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Button } from "@/components/ui/button"; // Assuming the Button component exists
-import { Card, CardContent } from "@/components/ui/card"; // Assuming the Card component exists
+import { Card, CardContent } from "@/components/ui/Card"; // Assuming the Card component exists
 import { useNavigate } from "react-router-dom";
 
 function CreateBooks() {

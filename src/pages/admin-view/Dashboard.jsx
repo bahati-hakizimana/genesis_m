@@ -3,7 +3,7 @@ import axios from "axios";
 import _ from "lodash"; // For sorting
 import { Input } from "@/components/ui/input"; // Ensure you have this component
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/Card";
 import { Link } from "react-router-dom";
 
 function Courses() {

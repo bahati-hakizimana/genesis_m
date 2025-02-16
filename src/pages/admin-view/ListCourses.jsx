@@ -3,7 +3,7 @@ import { toast } from "react-toastify";
 import axios from "axios";
 import "react-toastify/dist/ReactToastify.css";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/Card";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 function CreateCourse() {
