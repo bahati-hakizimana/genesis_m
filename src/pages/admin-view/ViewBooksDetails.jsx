@@ -3,7 +3,7 @@ import axios from "axios";
 import { useParams } from "react-router-dom";
 import biology from "../../assets/biologyy.jpg";
 import { Button } from "@/components/ui/button";  // Assuming the Button component exists
-import { Card, CardContent } from "@/components/ui/card";  // Assuming the Card component exists
+import { Card, CardContent } from "@/components/ui/Card";  // Assuming the Card component exists
 
 function ViewBooksDetails() {
   const { id } = useParams();  // Get the book ID from the URL
