@@ -3,6 +3,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import { useParams } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
+import DOMPurify from "dompurify";
 
 function ViewExamDetails() {
   const { id } = useParams();
@@ -75,9 +76,12 @@ function ViewExamDetails() {
           </div>
           <div className="mt-8">
             <p className="text-sm text-gray-500 font-medium uppercase mb-2">Content</p>
-            <div className="p-4 border border-gray-300 rounded bg-gray-100 text-gray-900 text-lg leading-relaxed whitespace-pre-wrap">
-              {exam.content}
-            </div>
+            <div
+                          className="p-4 border border-gray-300 rounded bg-gray-100 text-gray-900 text-lg leading-relaxed"
+                          dangerouslySetInnerHTML={{
+                            __html: DOMPurify.sanitize(exam.content),
+                          }}
+                        ></div>
           </div>
         </div>
       </div>
